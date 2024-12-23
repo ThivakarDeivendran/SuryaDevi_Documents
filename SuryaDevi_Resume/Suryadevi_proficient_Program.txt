@@ -1,0 +1,50 @@
+public class Test {
+  	public static void main(String[] args) {
+   		try {
+   			throw new IOException("Hello");
+   		} catch(IOException | Exception e) {
+   			System.out.println(e.getMessage());
+   		}
+   	}
+}
+
+============
+public class Testing {
+ 
+	public void main(String[] args) {  		
+   		int x = 10 * 10 - 10;
+   		System.out.println(x);
+   	}
+}
+
+=============
+{
+
+System.setProperty("","");
+WebDriver driver = new ChromeDriver();
+driver.get("url");
+Set<String> allWindows=driver.getWindowHandles();
+String expectedWindow="previouswindow";
+for(String id:allWindows)
+{
+if(driver.switchTo().window(id).getTitle().equals(expectedWindow))
+{
+break;
+
+}
+
+}
+
+
+}
+
+==========================
+package com.tester.programming-language;
+ 
+public class StringPrograms {
+ 
+	static void main(String[10] args) {
+		String s = "abc"
+		System.out.println(s);
+	}
+}

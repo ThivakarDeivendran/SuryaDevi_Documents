@@ -1,0 +1,30 @@
+laucn url , 
+access a webtable , 
+reteuve row 1 colmn 1 
+
+===========================
+public static void main(String[] args)
+{
+System.setProperty("webdriver.chrome.driver","pathofthedriver");
+WebDriver driver = new ChromeDriver();
+driver.manage.window().maximize();
+driver.get("url");
+WebElement cell=driver.findElement(By.xpath("//tbale.tbody/tr[1]/td[1]"));
+System.out.println(cell.getText());
+}
+=================
+{
+
+String arr[] = {"surya","devi","surya","devi","a","a"};
+Set<String> uniqueValues =  new HashSet<>();
+for(String a:arr)
+{
+uniqueValues.add(a);
+
+}
+System.out.println(uniqueValues);
+}
+
+
+===========
+

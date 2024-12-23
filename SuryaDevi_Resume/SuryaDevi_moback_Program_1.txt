@@ -1,0 +1,45 @@
+import java.util.*;
+class HelloWorld {
+   public static List<String> repeatedWords(List<String> words)
+    {
+        Map<String,Integer> map =  new HashMap<>();
+        List<String> repeatedWords=  new ArrayList<>();
+        for(String word:words)
+        {
+            if(map.containsKey(word))
+            {
+                map.put(word,map.get(word)+1);
+            }
+            else
+            {
+                map.put(word,1);
+            }
+        }
+        for(Map.Entry<String,Integer> entry: map.entrySet())
+        {
+            if(entry.getValue() ==1)
+            {
+                repeatedWords.add(entry.getKey());
+            }
+        }
+        return repeatedWords;
+    }
+    public static void main(String[] args) {
+        
+        List<String> words= new ArrayList<>();
+        words.add("This");
+        words.add("is");
+        words.add("java");
+        words.add("program");
+        words.add("is");
+        words.add("program");
+        
+        //String[] words=s1.split(" ");
+        List<String> repeatedWords= repeatedWords(words);
+        System.out.println("Repeated Words are : ");
+        for(String w:repeatedWords)
+        {
+            System.out.println(w);
+        }
+    }
+}

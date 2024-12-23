@@ -1,0 +1,15 @@
+Factorial
+Reverse the number
+the number is palindrome or not
+the number is Amstrong or not
+count the digit
+sum of the digit
+Swap two number without using Third variable
+find odd or even number
+Fibonacci series
+Reverse the String
+string is palindrome or not
+Prime number
+number in ascending order
+numbers in descending order
+2nd largest number in given array
